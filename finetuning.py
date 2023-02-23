@@ -157,8 +157,6 @@ def get_train_valid_test(data_df):
       '학습용 label shape:', tr_label.shape, '검증용 label shape:', val_label.shape)
     return tr_path, tr_label, val_path, val_label, test_path, test_label
 
-
-
 def create_model(model_name='mobilenet', verbose=False):
     
     input_tensor = Input(shape=(IMAGE_SIZE, IMAGE_SIZE, 3))
